@@ -7,4 +7,4 @@ ENV APP_ROOT /app
 WORKDIR $APP_ROOT
 
 COPY Gemfile Gemfile.lock $APP_ROOT/
-RUN bundle install
+RUN bundle install --jobs=2
